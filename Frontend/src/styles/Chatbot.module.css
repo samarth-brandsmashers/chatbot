@@ -1,0 +1,124 @@
+.container {
+    padding: 20px;
+    height: 100vh;
+}
+
+.chatContainer {
+    height: 100%;
+    width: 400px;
+    margin: auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.chatHeader {
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.200);
+
+}
+
+.chatHeader h3 {
+    margin: 5px 0;
+}
+
+.chatHeader p {
+    font-size: 12px;
+    color: gray;
+}
+
+.chatBody {
+    flex: 1;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 12px;
+    margin-right: 3px;
+}
+
+.chatBody::-webkit-scrollbar {
+    width: 4px;  /* Width of the scrollbar */
+}
+
+.chatBody::-webkit-scrollbar-track {
+    background: #f1f1f1;  /* Color of the track */
+    border-radius: 10px;
+}
+
+.chatBody::-webkit-scrollbar-thumb {
+    background-color: #888;  /* Color of the scrollbar thumb */
+    border-radius: 10px;
+}
+
+.chatBody::-webkit-scrollbar-thumb:hover {
+    background-color: #555;  /* Color on hover */
+}
+
+.chatMessage,
+.chatReply {
+    display: flex;
+    align-items: center;
+}
+
+.chatMessage .messageBubble {
+    background-color: #f1f1f1;
+    border-radius: 0px 20px 20px 20px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.chatReply {
+    justify-content: flex-end;
+    color: white;
+    background-color: #7D37FF;
+    border-radius: 20px 0px 20px 20px;
+    padding: 10px;
+    max-width: 60%;
+    align-self: flex-end;
+}
+
+.chatActions {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 4px;
+}
+
+.chatAction{
+    font-size: 10px !important;
+    font-weight: bold !important;
+}
+
+.chatInputSection {
+    border-top: 1px solid #e0e0e0;
+    padding: 10px;
+}
+
+.chatInputSection>div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.chatInput {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.chatContextSelect {
+    width: 40%;
+    
+}
+
+.chatInputSection .MuiIconButton-root {
+    color: gray;
+}
